@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    position: fixed;
+  
+    z-index: 1  ;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0,0,0, .8);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .overlay1 a {
+    position: relative;
+    top: 32.4vh;
+  }
+  .overlay1 hr {
+    position: relative;
+    top: 32.4vh;
+  }
+  
+  .overlay1 {
+    height: 100%;
+    position: fixed;
+    top: 0cm;
+    left: 18.780vw;
+    z-index: 1  ;
+   
+    text-align: center;
+    background-color: rgba(0,0,0, .4);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  } 
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  
+  }
+  
+  .overlay-content hr {
+    height: 0.114vh;
+    background-color: white;
+    width: 1.462vw;
+  }
+  
+  .overlay-content hr:hover {
+    
+    cursor: pointer;
+    width: 2.846vw;
+    transition: 0.2s;
+  }
+  
+  .overlay a {
+  
+    text-decoration: none;
+    font-size: 1.308vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    margin-top: 0px;
+    position: absolute;
+    top: 9.231vh;
+    right: 4.429vw;
+    font-size: 3.077vw;
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 11px;
+    font-size: 13px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+ 
+  #stand {
+   
+    display: flex
+}
+
+#stand div:nth-of-type(1) {flex-grow: .3;}
+#stand div:nth-of-type(2) {flex-grow: 9;}
+#stand div:nth-of-type(3) {flex-grow: 1;}

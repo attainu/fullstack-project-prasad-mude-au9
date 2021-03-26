@@ -1,0 +1,66 @@
+.dist {
+    height: 70vh;
+   
+    background-image: url("https://media.istockphoto.com/photos/cardboard-boxes-on-shelves-in-warehouse-picture-id577306350?k=6&m=577306350&s=612x612&w=0&h=3FEGBMbmIEhLKPpJKXRQrcJtd3REE8UjHH7_zx9nIYw=");
+    background-size: 100vw 70vh; 
+
+
+}
+
+.dist h1 {
+    color:wheat;
+    font-size: 7vw;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 14vw;
+    top:37vh
+}
+
+.example {
+    position: relative;
+    left: 11vw;
+    padding: 10vh;
+}
+
+form.example input[type=search] {
+ 
+   outline: none;
+    font-size: 17px;
+    border: none;
+    
+    
+    width: 90%;
+    background: #f1f1f1;
+   
+  }
+  .outline {
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+   
+    width: 60%;
+    background: #f1f1f1;
+   
+  }
+
+    .outline:hover {
+    box-shadow: 0px 0px 1px 1px silver;
+  }
+  
+  form.example button {
+   
+    width: 15%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+ 

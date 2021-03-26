@@ -1,0 +1,50 @@
+.regis {
+    background-color:#485a64;
+    height: 30vh;
+    position: relative;
+    top: 9.5vh;
+}
+
+.regis h1 {
+    color: white;
+    position: relative;
+    left: 11vw;
+    top:5vh
+}
+.regis p {
+    color: white;
+    position: relative;
+    left: 11vw;
+    top:5vh
+}
+
+.card-cont {
+    position: relative;
+    top: 17vh;
+    left: 11vw;
+    border: none;
+    background-color: #f6f7f7;
+    width: 60vw;
+    height: 140vh;
+}
+
+form span {
+    color: red;
+}
+
+.labelf {
+    margin-left: -0vw;
+    margin-right: 0vw;
+}
+/* .regis p {
+
+} */
+
+/* .set {
+    position: relative;
+    top: 5cm;
+} */
+/* 
+.reduce {
+    width: 15cm;
+} */

@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#cube {
+    border: 1px solid white;    
+    background-color: transparent;
+    border-radius: 0px;
+    width: 0.8vw;
+    height: 0.8vw;
+    position: static;
+    margin: 0;
+    display: block;
+}
+
+
+/* 
+li:hover + #cube { background-color: yellow; } */
+
+/* ul:hover {
+    background-color: seagreen;
+} */
+
+
+.active:hover>#cube, .active:focus>#cube {
+    background-color: white;
+}
+
+
+
+
+
+/* #cube:visited {
+    background-color: green;
+}
+.fp-tooltip:visited {
+    background-color: green;
+} */
+
+
+
+
+ul {
+    list-style-type: none;
+}
+a:hover {
+    text-decoration: none;
+    
+}
+
+#fp-nav {position:fixed;top:40%}
+
+
+/* .moved {
+    transform: translate(10px, 10px);
+    background-color: pink;
+        font-family: arial,helvetica,sans-serif;
+  } */
+
+#fp-nav{right:1.308vw}
+
+.fp-tooltip {
+    right: 0px;
+    width: fit-content;
+    height:fit-content;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-family: helvetica;
+    font-size: 0.923vw;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    bottom: 1.077vw;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: white;
+    opacity:0
+}
+
+
+.fp-tooltip:hover {cursor: pointer;opacity:1; transition: right .4s;
+    transition-timing-function: ease-in-out;
+      right: 1.538vw; }
+
+
+#fp-nav ul li {display:block;width:2px;height:11px;margin:7px}
+
+.one {
+    background-image: url(https://wallpapercave.com/wp/wp8057055.jpg) ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+   
+}
+
+
+.two {
+    background-image: url(https://www.tatasteel.com/media/3932/global_presence_bg2.jpg) ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.three {
+    background-image: url(https://www.tatasteel.com/media/13009/cdp_desktop-banner.png) ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.four {
+    background-image: url(https://www.tatasteel.com/images/investor_bg.jpg) ;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.one >h2 {
+    font-size: 3.846vw;
+    position: relative;
+    left: 36.462vw;
+    top: 34vh;
+}
+
+
+
+.sresult {
+    color:black; background:white;width:28.462vw;margin:0vw;height:5.5vh;border-radius: 4px;
+    font-size: 13px; font-style:normal; text-align: left;
+     position: relative;left: 39.769vw;top: 37.143vh;
+}
+
+/* #fp-nav ul {margin:0;padding:0;} */
+/* 
+
+
+#fp-nav ul li a {display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none;}
+
+#fp-nav ul li a:active span {height:12px;width:12px;margin:-6px 0 0 -6px;border-radius:100%;}
+
+#fp-nav ul li:hover   {height:12px;width:12px;margin:-6px 0 0 -6px;border-radius:100%;}
+
+
+ */
+
+
+
+
+
+/*#fp-nav{position:fixed;z-index:100;margin-top:-32px;top:50%;opacity:1;-webkit-transform:translate3d(0,0,0);}
+#fp-nav.right{right:17px;}
+#fp-nav.left{left:17px;}
+.fp-slidesNav{position:absolute;z-index:4;left:50%;opacity:1;}
+.fp-slidesNav.bottom{bottom:17px;}
+.fp-slidesNav.top{top:17px;}
+#fp-nav ul,.fp-slidesNav ul{margin:0;padding:0;}
+#fp-nav ul li,.fp-slidesNav ul li{display:block;width:14px;height:13px;margin:7px;position:relative;}
+.fp-slidesNav ul li{display:inline-block;}
+#fp-nav ul li a,.fp-slidesNav ul li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none;}
+#fp-nav ul li a.active span,.fp-slidesNav ul li a.active span,#fp-nav ul li:hover a.active span,.fp-slidesNav ul li:hover a.active span{height:12px;width:12px;margin:-6px 0 0 -6px;border-radius:100%;}
+#fp-nav ul li a span,.fp-slidesNav ul li a span{border-radius:50%;position:absolute;z-index:1;height:4px;width:4px;border:0;background:none;left:50%;top:50%;margin:-2px 0 0 -2px;-webkit-transition:all 0.1s ease-in-out;-moz-transition:all 0.1s ease-in-out;-o-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}
+#fp-nav ul li:hover a span,.fp-slidesNav ul li:hover a span{width:10px;height:10px;margin:-5px 0px 0px -5px;}
+#fp-nav ul li .fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:220px;overflow:hidden;display:block;opacity:0;width:0;cursor:pointer;}
+#fp-nav ul li:hover .fp-tooltip,#fp-nav.fp-show-active a.active + .fp-tooltip{-webkit-transition:opacity 0.2s ease-in;transition:opacity 0.2s ease-in;width:auto;opacity:1;}
+#fp-nav ul li .fp-tooltip.right{right:20px;}
+#fp-nav ul li .fp-tooltip.left{left:20px;}
+
+
+#fp-nav ul li .fp-tooltip.right{right:-20px;-moz-transition:all 0.4s ease-in-out 0s;-webkit-transition:all 0.4s ease-in-out 0s;transition:all 0.4s ease-in-out 0s;opacity:0;}
+#fp-nav ul li .fp-tooltip{top:2px;background:#fff;color:#000;border-radius:0px;padding:4px 8px;font-size:12px;line-height:13px;}
+#fp-nav ul li{width:auto;height:auto;margin:5px 0;padding:5px 0;}
+#fp-nav ul li:last-child{display:none;}
+#fp-nav ul li a span{border:1px solid #fff;border-radius:0px;width:12px;height:12px;position:static;margin:0;display:block;}
+#fp-nav ul li a.active span,#fp-nav ul li:hover a span,#fp-nav ul li:hover a.active span{width:12px;height:12px;border-radius:0px;background:#fff;margin:0;}
+#fp-nav ul li:hover .fp-tooltip.right{right:0px;opacity:1;z-index:1;}
+
+
+
+
+ */
+

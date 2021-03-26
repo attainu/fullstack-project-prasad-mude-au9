@@ -1,0 +1,40 @@
+.overlay2 {
+    height: 100%;
+    position: fixed;
+    top: 0vh;
+    left: 38.6vw;
+    z-index: 1  ;
+    
+    text-align: center;
+    background-color: rgba(0,0,0, .4);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  } 
+  
+/*   
+.overlay {
+  height: 100%;
+  position: fixed;
+
+  z-index: 1  ;
+  top: 0;
+  left: 0;
+  
+  background-color: rgba(0,0,0, .8);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+} */
+
+
+
+
+/* .overlay1 a {
+  position: relative;
+  top: 32.4vh;
+}
+.overlay1 hr {
+  position: relative;
+  top: 32.4vh;
+} */

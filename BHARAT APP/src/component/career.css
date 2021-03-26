@@ -1,0 +1,37 @@
+.car {
+    height: 100vh;
+    background-image: url(file:///C:/Users/Anurag/Desktop/check/pexels-marily-torres-776615.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.car h1 {
+    position: relative;
+    color: white;
+    left: 5vw;
+    top: 12vh;
+} 
+.car h1:hover {
+    color: turquoise;
+}
+
+
+#apply {
+    
+    position: absolute;
+    left: 47vw;
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: black;
+    padding: 7px 20px;
+    text-decoration: none;
+    width: 130px;
+    text-align: right;
+    margin: 40px auto 0;
+}
+
+#apply:hover {
+    background-color: white;
+  
+}
+

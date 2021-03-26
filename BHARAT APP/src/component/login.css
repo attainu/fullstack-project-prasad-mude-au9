@@ -1,0 +1,76 @@
+.form-control:focus {
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(102, 175, 233, 0.6) 0px 0px 8px;
+    border-color: rgb(102, 175, 233); 
+    
+    outline: 0px;
+}
+
+.form-control:hover {
+    border-color: rgb(123, 178, 221);
+}
+
+.form-control {
+    margin-left: 7vw;
+    display: block;
+    width: 80%;
+    height: 26px;
+    font-size: 12px;
+    line-height: 1.66667;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+    padding: 2px 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(186, 186, 186);
+    border-image: initial;
+    border-radius: 1px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.form-gro {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.vl {
+    margin-top: 13vh;
+    border-left: 1px solid black;
+    height: 50vh
+  }
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+#main {
+    font-family:sans-serif;
+    position: fixed;
+    top: 20vh;
+    width: 100vw;
+    height: 70vh;
+    display: inline-flex
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: .7;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+
+.sbtn {
+   
+    background-color: #0f58d6;
+    height: 30px;
+    color: white;
+    font-weight:100;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    
+}
+
+.new-register {
+    position: relative;
+    top: 35vh;
+    right: 10vw;
+}

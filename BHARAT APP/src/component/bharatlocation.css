@@ -1,0 +1,66 @@
+.local {
+    height: 80vh;
+   
+    background-image: url("https://images.unsplash.com/photo-1585858229735-cd08d8cb510d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTF8fG1hcHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: 100vw 80vh; 
+
+
+}
+
+.local h1 {
+    color:wheat;
+    font-size: 7vw;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 19vw;
+    top:40vh
+}
+
+.newexample {
+    position: relative;
+    left: 11vw;
+    padding: 10vh;
+}
+
+form.newexample input[type=search] {
+ 
+   outline: none;
+    font-size: 17px;
+    border: none;
+    
+    
+    width: 90%;
+    background: #f1f1f1;
+   
+  }
+  .newoutline {
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+   
+    width: 60%;
+    background: #f1f1f1;
+   
+  }
+
+    .newoutline:hover {
+    box-shadow: 0px 0px 1px 1px silver;
+  }
+  
+  form.newexample button {
+   
+    width: 15%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.newexample button:hover {
+    background: #0b7dda;
+  }
+ 
