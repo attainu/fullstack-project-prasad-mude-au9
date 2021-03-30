@@ -5,15 +5,19 @@ import {Link} from "react-router-dom"
 class ProductD extends React.Component { 
         constructor(props) { 
         super(props); 
-        this.state = { change: true ,
+        this.state = { 
           mode0:"0%",
           mode1:"0%",
+          mode2:"0%",
+          mode3:"0%",
+          mode4:"0%",
+          mode5:"0%",
           pdata:[]
         }; 
         } 
 
        changehandleron =(e)=>{
-         var koko = [0,1]
+         var koko = [0,1,2,3,4,5]
          
          var x = e.target.id
         e.preventDefault()
@@ -31,13 +35,17 @@ class ProductD extends React.Component {
         e.preventDefault()
         this.setState({mode1:"0%"})
         this.setState({mode0:"0%"})
+        this.setState({mode2:"0%"})
+        this.setState({mode3:"0%"})
+        this.setState({mode4:"0%"})
+        this.setState({mode5:"0%"})
       }
 
 
 
         render() { 
           var {pdata} = this.state
-           var soso = [this.state.mode0,this.state.mode1] 
+           var soso = [this.state.mode0,this.state.mode1,this.state.mode2,this.state.mode3,this.state.mode4,this.state.mode5] 
           return(
           pdata.map((item,index)=>{
            

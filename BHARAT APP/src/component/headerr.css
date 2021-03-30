@@ -36,7 +36,7 @@ html {
     z-index: 1  ;
    
     text-align: center;
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0, 0, 0, 0.8);
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
@@ -85,7 +85,7 @@ html {
   }
 
   .dropbtn {
-    background-color: #4CAF50;
+    background-color: rgb(37, 145, 216);
     color: white;
     padding: 11px;
     font-size: 13px;

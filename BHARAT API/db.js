@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/BHARAT',{
+mongoose.connect('mongodb+srv://prasad-admin:prasad14@cluster0.qlv8y.mongodb.net/BHARAT',{
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true

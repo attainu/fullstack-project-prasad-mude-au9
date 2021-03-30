@@ -1,6 +1,8 @@
 import { Container,Row,Col,Grid,Card,CardDeck} from 'react-bootstrap';
 import {Link} from "react-router-dom"
 import "./productDDisplay.css"
+import Tabel from './tabel';
+
 const ProductDDisplay = (props) =>{
         var x= window.location.search
         var res = x.split("%20");
@@ -38,6 +40,10 @@ const ProductDDisplay = (props) =>{
     
                                     <img style={{width:"7cm",height:"7cm"}} alt="img" src={part.img}/>
                                 </div>
+                                <h4 style={{marginTop:"13vh"}}>Dimensions Available in Metric</h4>
+                                <div style={{position:"relative",top:"5vh",right:"0vw"}}>
+                                <Tabel />
+                                </div>
                             
                           </div>
                             )
@@ -50,11 +56,13 @@ const ProductDDisplay = (props) =>{
         
     }
     return(
+        <div >
         <div className="main">
             <div className="submain">
            
             {renderVideos(props)}
             </div>
+        </div>
         </div>
     )
 }

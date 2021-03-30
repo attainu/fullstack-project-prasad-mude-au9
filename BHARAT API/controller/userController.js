@@ -21,7 +21,8 @@ exports.addUser = (req,res) =>{
         pincode:req.body.pincode,
         city:req.body.city,
         state:req.body.state,
-        type_user:req.body.type_user
+        type_user:req.body.type_user,
+        image:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
        
       
     },(err,data) => {
@@ -78,7 +79,17 @@ exports.getinuser = (req,res) => {
         
         }
 
-
+exports.updateuser = (req,res) =>{
+    var token = req.headers['x-access-token'];
+    if(!token) res.send({auth:false,token:'No Token Provided'})
+    jwt.verify(token,config.secert,(err,data) => {
+        if(err) return res.status(500).send({auth:false, "error":'Invalid Token'})
+        User.findByIdAndUpdate(data.id, {$set:{image:req.body.image}},(err,result) => {
+            if(err) return res.status(500).send(err)
+            res.send(result)
+        })
+    })  
+}
 
 // router.post('/register',(req,res)=>{
 //     console.log(req.body)

@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 import { Container,Row,Col,Grid} from 'react-bootstrap';
 
 // import ButtonAppBar from "./header"
@@ -15,6 +15,11 @@ import BHARATlocation from "./bharatlocation"
 import Login from "./login"
 import Register from "./register"
 import Profile from "./profile"
+import ContactUs from "./contactus"
+import Resume from "./cv"
+import Image from "./image"
+
+
 
 const Routing = () => {
     return(
@@ -31,8 +36,11 @@ const Routing = () => {
               <Route exact path="/login" component={Login}/>   
               <Route exact path="/register" component={Register}/>
               <Route exact path="/profile" component={Profile}/>
-              <Route path={["/career", "/productDetail", "/distributor","/Blocation", "/login","/register", "/profile"]} component={Headerr} />
-             
+              <Route exact path="/contact" component={ContactUs}/>
+              <Route exact path="/image" component={Image}/>
+              <Route exact path="/submit" component={Resume}/>
+              <Route path={["/career", "/productDetail", "/distributor","/Blocation", "/login","/register", "/profile","/contact","/submit"]} component={Headerr} />
+           
                 
         </BrowserRouter>
     )

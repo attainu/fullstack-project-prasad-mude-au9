@@ -1,0 +1,16 @@
+.region {
+    display:flex;
+    position:relative;
+    top:30vh;
+    left: 25vw;
+}
+
+.region div {
+    margin-right: 10vw;
+    
+    flex-direction: row;
+}
+.region h5 {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}

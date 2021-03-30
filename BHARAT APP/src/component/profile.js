@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom"
 import { Button,Form ,Card} from 'react-bootstrap';
 import "./profile.css"
+import Image from "./image"
 
 
 import "./login.css"
@@ -65,7 +66,9 @@ class Profile extends Component{
   return (
         <div className="pro-container">
             <div id="main-pro">
-                <div className="pro-logo"></div>
+              <div>
+                <Image/>  
+                </div>  
               
                 <div>
                     <h4 style={{marginTop:"5.5vh",marginLeft:"2vw"}}>MyProfile</h4>
@@ -76,7 +79,7 @@ class Profile extends Component{
             </div>
             <div className="pro-detail">
                 <button onClick={this.viewpro}>View Profile</button>
-                <button onClick={this.editpro}>Edit Profile</button>
+                <button onClick={this.editpro}>Quick Links</button>
                 
             </div>
             {/* <div>

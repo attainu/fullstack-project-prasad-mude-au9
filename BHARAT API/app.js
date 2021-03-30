@@ -6,8 +6,8 @@ const port = process.env.PORT || 7000;
 const cors = require('cors');
 app.use(cors());
 app.use(express.json());
-// const bodyParser = require('body-parser');
-// app.use(bodyParser.json());
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 // import productRouter from "./routes/productRoutes.js"
 const productRouter = require('./routes/productRoutes');

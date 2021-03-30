@@ -132,7 +132,7 @@ class Register extends Component{
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Phone number:<span>*</span> </Form.Label>
-                <Form.Control className="labelf"  type="number" onChange={this.handleChangePhone} required/>
+                <Form.Control autoComplete="off" className="labelf"  type="number" onChange={this.handleChangePhone} required/>
             </Form.Group>
             <Form.Group controlId="formBasicEmail" required>
                 <Form.Label>Company name:<span>*</span></Form.Label>

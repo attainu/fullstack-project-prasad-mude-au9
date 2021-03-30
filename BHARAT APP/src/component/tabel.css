@@ -1,0 +1,41 @@
+
+td div {
+    color: grey;
+    font-weight: 400;
+    background-color: #dee2e6;
+    width: 08vw;
+    height: 4vh;
+ 
+}
+
+/* th div {
+    background-color: #dee2e6;
+    width: 10vw;
+    height: 5vh;
+   
+} */
+
+.table-head div {
+    color: whitesmoke;
+    font-weight: 400;
+    background-color: #485a64;
+    width: 16vw;
+    height: 5vh; 
+    
+}
+
+.table-row div {
+   
+    color: whitesmoke;
+    font-weight: 400;
+    background-color: #485a64;
+    width: 8vw;
+    height: 5vh;    
+}
+.enough div {
+    color: whitesmoke;
+    font-weight: 400;
+    background-color: #0f58d6;
+    width: 8vw;
+    height: 5vh; 
+}

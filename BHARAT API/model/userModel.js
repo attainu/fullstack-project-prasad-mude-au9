@@ -70,6 +70,9 @@ var userSchema  = new mongoose.Schema({
     type: String,
     required: true,
   },
+  image:{
+    type:String
+  }
       
 },{ versionKey: false })
 //mongoose.model('collection','schema)

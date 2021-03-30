@@ -113,9 +113,9 @@ handleLogout=(e) => {
                   <Typography variant="h8" style={{fontSize:"0.923vw"}} >
                  <Link href="#"  onClick={(e) => { this.changehandleron(e) }} > 
                   <IconButton edge="start"  color="inherit" aria-label="menu">
-                   <MenuIcon style={{fontSize:"1.385vw",marginBottom:".7vh"}}/>
+                   <MenuIcon style={{fontSize:"1.385vw",marginBottom:".7vh",color:"white"}}/>
                   </IconButton >
-                  <span style={{marginLeft:"-.7vw"}}>
+                  <span style={{marginLeft:"-.7vw",color:"white"}}>
                     MENU
                     </span>
                   </Link>
@@ -133,7 +133,7 @@ handleLogout=(e) => {
                        
                         </div>
                     </div>
-                     : <Link to="/login" color="inherit" >Login</Link>                      
+                     : <Link to="/login" style={{color:"white"}} >Login</Link>                      
                     }
                     </Typography>
                     </div>
@@ -184,24 +184,31 @@ handleLogout=(e) => {
                   <a href="#" onClick={(e) => { this.changehandleron4(e) }}>Industries</a>
                   <hr></hr>
                     <div className="overlay1" style={{width:this.state.mode4}}>
-                        <a href="#">industries</a>
+                        <a href="#">Aerospace</a>
                         <hr></hr>
-                        <a href="#">industries</a>
+                        <a href="#">Agriculture</a>
                         <hr></hr>
-                        <a href="#">industries</a>
+                        <a href="#">Automobile</a>
                         <hr></hr>
-                        <a href="#">industries</a>
+                        <a href="#">Construction</a>
+                        <hr></hr>
+
+                        <a href="#">Marine</a>
+                        <hr></hr>
+                        <a href="#">Mining</a>
+                        <hr></hr>
+                        <a href="#">Railways</a>
                   
                       </div>
                   {/* <div className="vl"></div> */}
                  </div>
                  <div>
-                  <Link to="/career">Career</Link>
+                  <Link to="/submit">Career</Link>
                   <hr></hr>
                   {/* <div className="vl"></div> */}
                  </div>
                  <div>
-                  <a href="#">ContactUs</a>
+                  <Link to="/contact">ContactUs</Link>
                   <hr></hr>
                   {/* <div className="vl"></div> */}
                  </div>

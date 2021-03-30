@@ -5,12 +5,21 @@ import Container from '@material-ui/core/Container';
 import SearchBar from "material-ui-search-bar";
 import React from "react"; 
 import { Card, } from 'react-bootstrap';
+import Region from './region';
+import DemoCarousel from "./carousal"
 
 class Hashnav extends React.Component { 
   constructor(props) { 
     super(props); 
     this.state = { value:"",pdata:[],country:[{"name":"india"},{"name":"america"},{"name":"south"},{"name":"africa"},{"name":"argentina"},{"name":"indonesia"}] }; 
   } 
+
+  visitAgain=()=>{
+    this.setState({ value:"" })
+    
+  }
+
+
 
     visit=()=>{
       const{value} = this.state
@@ -19,15 +28,15 @@ class Hashnav extends React.Component {
       this.state.pdata.map((item)=>{
         return(
         item.sort.map((part)=>{
-          if(value!=="" && part.name.indexOf(value)!==-1){
+          if(value!=="" && part.name.toLowerCase().indexOf(value.toLowerCase())!==-1){
             return(
               <div className="sresult">
               <ul >
-                <li>
-                  <Link to={`/productDetail?${part.name}`}  >
+               
+                  <Link to={`/productDetail?${part.name}`} >
                   {part.name}
                   </Link>
-                </li>
+                
               </ul>
               </div>
             )
@@ -47,13 +56,14 @@ class Hashnav extends React.Component {
     
   return (
 
-    <div >
+    <div>
       <section id="spotlight" className="one" ><h2 >Welcome to BHARAT</h2>
       <div>
-      <SearchBar
+      <SearchBar placeholder="What are you looking for?"
       style={{width:"28.462vw",height:"5.5vh", position:"relative",left:"39.769vw",top:"37.143vh"}}
          
           onChange={(newValue) => this.setState({ value: newValue })}
+          onCancelSearch={this.visitAgain}
          
         />
         <div>
@@ -63,18 +73,18 @@ class Hashnav extends React.Component {
       </div>
   
       </section>
-      <section id="sustainabilty" className="two"><h1>1</h1></section>
-      <section id="production-sector" className="three"><h1>1</h1></section>
+      <section id="Region" className="two"><Region/></section>
+      <section id="product-range" className="three"><DemoCarousel/></section>
       <section id="investors" className="four"><h1>1</h1></section>
       
-    <div id="fp-nav" class="right" >
+    <div id="fp-nav" class="right"  style={{zIndex:"1",marginRight:"5px"}}>
       <ul id="container">
         <li><a href="#spotlight" className="active"><span id="cube"></span><p style={{marginLeft:"-18px"}} className="fp-tooltip">{'\xa0'}Spotlight{'\xa0'}</p></a></li>
-        <li><a href="#sustainabilty" className="active"><span id="cube"></span><p style={{marginLeft:"-38px"}} className="fp-tooltip">{'\xa0'}Sustainability</p></a></li>
-        <li><a href="#production-sector" className="active"><span id="cube"></span><p style={{marginLeft:"-13px"}} className="fp-tooltip">{'\xa0'}Product{'\xa0'}</p></a></li>
+        <li><a href="#Region" className="active"><span id="cube"></span><p style={{marginLeft:"-10px"}} className="fp-tooltip">{'\xa0'}Region</p></a></li>
+        <li><a href="#product-range" className="active"><span id="cube"></span><p style={{marginLeft:"-13px"}} className="fp-tooltip">{'\xa0'}Product{'\xa0'}</p></a></li>
         <li><a href="#investors" className="active"><span id="cube"></span><p style={{marginLeft:"-19px"}} className="fp-tooltip">{'\xa0'}Investors{'\xa0'}</p></a></li>
         <li><a href="#media" className="active"><span id="cube"></span><p style={{marginLeft:"-9px"}} className="fp-tooltip">{'\xa0'}Media{'\xa0'}</p></a></li>
-        <li><a href="#stats" className="active"><span id="cube"></span><p style={{marginLeft:"-11px"}} className="fp-tooltip">Statss{'\xa0'}</p></a></li>
+        <li><a href="#stats" className="active"><span id="cube"></span><p style={{marginLeft:"-7px"}} className="fp-tooltip">Statss{'\xa0'}</p></a></li>
     </ul>
     </div>
     </div>
